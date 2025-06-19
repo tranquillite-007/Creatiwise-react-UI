@@ -178,3 +178,11 @@ Deployment
     
 2.  vercel
     
+
+## Contact
+
+If you have any questions, feel free to contact me at [sinhaaman655@gmail.com](mailto:sinhaaman655@hotmail.com).
+
+
+
+Aman Sinha ® sinhaaman655@hotmail.com
