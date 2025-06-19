@@ -1,0 +1,233 @@
+.footer-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 64px;
+  height: auto;
+  min-height: 487px;
+}
+
+.marquee-container {
+  width: 100%;
+  height: 88px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-text {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 88px;
+  letter-spacing: 0%;
+  color: transparent;
+  -webkit-text-stroke: 2px #cbcbcb;
+  text-stroke: 2px #cbcbcb;
+  display: inline-block;
+}
+
+.star {
+  width: 56px;
+  height: 56px;
+  margin: 16px 0;
+  position: relative;
+}
+
+.star::before {
+  content: "✺";
+  font-size: 56px;
+  line-height: 56px;
+  color: #cbcbcb;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.footer-content {
+  width: 100%;
+  height: auto;
+  min-height: 335px;
+  padding: 112px 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lets-talk {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 610px;
+  margin: auto;
+  text-align: center;
+}
+
+.email-link {
+  width: auto;
+  width: max-content;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.email-link::after {
+  content: "↗";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+}
+
+.copyright {
+  font-family: "Syne", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 32px;
+}
+
+.social-link {
+  font-family: "Syne", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 1600px) {
+  .lets-talk {
+    font-size: 56px;
+    line-height: 72px;
+  }
+
+  .marquee-text {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .lets-talk {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .marquee-text {
+    font-size: 40px;
+    line-height: 72px;
+  }
+
+  .star {
+    width: 48px;
+    height: 48px;
+  }
+
+  .star::before {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .lets-talk {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .marquee-text {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .star {
+    width: 40px;
+    height: 40px;
+  }
+
+  .star::before {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lets-talk {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .marquee-text {
+    font-size: 28px;
+    line-height: 56px;
+    -webkit-text-stroke: 1px #cbcbcb;
+    text-stroke: 1px #cbcbcb;
+  }
+
+  .star {
+    width: 32px;
+    height: 32px;
+  }
+
+  .star::before {
+    font-size: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lets-talk {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .marquee-text {
+    font-size: 24px;
+    line-height: 48px;
+  }
+}

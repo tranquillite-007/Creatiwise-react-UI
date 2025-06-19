@@ -1,0 +1,110 @@
+.expertise-container {
+  width: 100%;
+  max-width: 1240px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.expertise-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.expertise-heading h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  height: auto;
+}
+
+.expertise-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+}
+
+.expertise-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: auto;
+}
+
+.bullet-point {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+}
+
+.card-title h3 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.card-content p {
+  width: 100%;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1600px) {
+  .expertise-heading h2 {
+    font-size: 36px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .expertise-heading h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-heading h2 {
+    font-size: 24px;
+  }
+
+  .card-title h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

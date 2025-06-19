@@ -1,0 +1,230 @@
+.banner {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  min-height: 810px;
+  padding: 172px 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 112px;
+}
+
+.title-frame {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.title-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: auto;
+}
+
+.title-text {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.title-circle-1 {
+  background-image: url("../assets/images/user1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 128px;
+  height: 60px;
+  border-radius: 100px;
+}
+
+.title-circle-2 {
+  background-image: url("../assets/images/user2.png");
+  background-size: cover;
+  background-position: center;
+  width: 128px;
+  height: 60px;
+  border-radius: 100px;
+}
+
+.bottom-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.brands-container {
+  width: 716px;
+  height: 64px;
+  overflow: hidden;
+  position: relative;
+}
+
+.brands-marquee {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.brands-track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 100%;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.welcome-text {
+  width: 492px;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0%;
+  color: #fff;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1600px) {
+  .title-text {
+    font-size: 56px;
+    line-height: 72px;
+  }
+
+  .welcome-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .title-text {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .title-circle-1,
+  .title-circle-2 {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bottom-section {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .brands-container,
+  .welcome-text {
+    width: 100%;
+  }
+
+  .brand-item {
+    width: 120px;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    padding: 120px 32px;
+    min-height: auto;
+  }
+
+  .container {
+    gap: 64px;
+  }
+
+  .title-frame {
+    gap: 12px;
+  }
+
+  .title-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .title-text {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .title-circle-1,
+  .title-circle-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .brand-item {
+    width: 100px;
+    margin: 0 15px;
+  }
+
+  .welcome-text {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 80px 16px;
+  }
+
+  .brand-item {
+    width: 80px;
+    margin: 0 10px;
+  }
+}
