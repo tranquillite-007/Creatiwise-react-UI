@@ -1,70 +1,180 @@
-# Getting Started with Create React App
+Portfolio Website - Modern Design Portfolio
+===========================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React showcasing design work, expertise, and professional experience. Features a clean aesthetic with smooth animations and interactive elements.
 
-## Available Scripts
+Table of Contents
+-----------------
 
-In the project directory, you can run:
+*   [Features](#features)
+    
+*   [Tech Stack](#tech-stack)
+    
+*   [File Structure](#file-structure)
+    
+*   [Installation](#installation)
+    
+*   [Development](#development)
+    
+*   [Deployment](#deployment)
+ 
 
-### `npm start`
+Features
+--------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Key Sections
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*   **Hero Section**: Bold typography with animated brand marquee
+    
+*   **Expertise**: Grid layout showcasing skills with bullet-point indicators
+    
+*   **Works**: Case study cards with hover effects
+    
+*   **Experience**: Timeline-style professional history
+    
+*   **Blog**: Article previews with tags
+    
+*   **Testimonials**: Interactive carousel with navigation controls
+    
+*   **FAQ**: Expandable question/answer component
+    
+*   **Footer**: Animated marquee with contact information
+    
 
-### `npm test`
+### Interactive Elements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*   Active state navigation
+    
+*   Auto-rotating testimonial carousel
+    
+*   Expandable FAQ section
+    
+*   Responsive design for all screen sizes
+    
+*   Smooth animations and transitions
+    
 
-### `npm run build`
+Tech Stack
+----------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*   **React** (v18+): Component-based architecture
+    
+*   **CSS Modules**: Scoped styling for components
+    
+*   **HTML5**: Semantic markup
+    
+*   **CSS3**: Modern styling with flexbox/grid
+    
+*   **JavaScript ES6+**: Modern syntax and features
+    
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Design System
 
-### `npm run eject`
+*   **Typography**: Syne (headings) and Poppins (body) from Google Fonts
+    
+*   **Color Scheme**: Dark theme with white accents (#010208 background)
+    
+*   **Icons**: SVG icons for navigation and controls
+    
+*   **Spacing**: Consistent 8px baseline grid
+    
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Build Tools
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*   **Vite** or **Create React App**: Project scaffolding
+    
+*   **npm**: Package management
+    
+*   **Git**: Version control
+    
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+File Structure
+--------------
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+portfolio/
+├── public/
+│   ├── index.html
+│   └── (other static assets)
+├── src/
+│   ├── assets/
+│   │   ├── fonts.css
+│   │   ├── images/
+│   │   │   ├── user1.jpg
+│   │   │   ├── user2.png
+│   │   │   ├── (...all other images)
+│   │   └── images.js
+│   ├── components/
+│   │   ├── (all component folders with .jsx and .css)
+│   ├── styles/
+│   │   └── global.css
+│   ├── utils/
+│   │   └── constants.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── .gitignore
+└── package.json
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Installation
+------------
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  git clone [https://github.com/youruse/portfolio.gitcd portfolio](https://github.com/tranquillite-007/Creatiwise-react-UI.git)
+    
+2.  npm install
+    
+3.  npm run dev
+    
+4.  **Open in browser**: The app should automatically open at http://localhost:3000
+    
 
-### Code Splitting
+Development
+-----------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Available Scripts
 
-### Analyzing the Bundle Size
+*   npm run dev: Starts development server
+    
+*   npm run build: Creates production build
+    
+*   npm run lint: Runs ESLint
+    
+*   npm run preview: Previews production build locally
+    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Component Architecture
 
-### Making a Progressive Web App
+Each section is built as an independent React component with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+*   Own JSX for structure
+    
+*   CSS Module for styling
+    
+*   Self-contained state management
+    
+*   Responsive design considerations
+    
 
-### Advanced Configuration
+### Adding New Content
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+*   **Add new work items**:Edit Works.jsx and add to the worksData array
+    
+*   **Update testimonials**:Modify the testimonials array in Testimonial.jsx
+    
+*   **Change expertise items**:Update the expertiseData array in Expertise.jsx
+    
 
-### Deployment
+Deployment
+----------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Vercel (Recommended)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  npm install -g vercel
+    
+2.  vercel
+    
